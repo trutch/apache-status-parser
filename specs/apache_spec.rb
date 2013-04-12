@@ -1,4 +1,3 @@
-require 'minitest/spec'
 require 'minitest/autorun'
 
 describe ApacheStatus do
@@ -7,6 +6,9 @@ describe ApacheStatus do
   it "should have a hash with all scoreboard values" do
     @apache_status.scoreboard.keys.count.must_be == 11
   end
+end
+
+class ApacheStatus
 end
 
 =begin
